@@ -8,6 +8,13 @@ body {
   padding: 40px;
 }
 
+.container {
+  display: inline-block;
+  flex-direction: column;
+  align-items: start;
+  column-gap: 5px;
+}
+
 /* Headings */
 h1,
 h2,
@@ -19,7 +26,12 @@ h3 {
 /* Header */
 header {
   text-align: center;
+  display: flex;
+  align-items: center;
 }
+.logo { 
+  margin-right: auto; 
+  }
 
 /* Containers */
 div {
@@ -54,6 +66,20 @@ a:hover {
 nav a {
   padding-left: 20px;
 }
+.navbar{
+  width: 600%;
+  margin: 72px 20px 0 0;
+}
+  #navbar li{
+    display: inline-block;
+  }
+  #navbar a{
+    text-decoration: none;
+    font-size:20px;
+    padding-right: 20px;
+    word-spacing: 55px;
+    float: right;
+  }
 
 /* Images */
 img {
@@ -67,6 +93,22 @@ img {
   border-radius: 50%;
 }
 
+.image-circle{
+  display: flex;
+  flex-direction:row;
+  justify-content:right;
+  align-items:center;
+}
+
+.image-circle {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-circle .content {
+  flex: 1;
+  padding: 10px;
+}
 /* Footer */
 footer {
   text-align: center;
